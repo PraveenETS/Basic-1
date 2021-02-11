@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #f2f2f2;
+}
+.banner{
+    position: static;
+    height:90vh;
+    background-attachment:scroll;
+    background-image: url(html_assignment/images/slide01.jpg);   
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bd{width: 60vw;
+    position: absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 40vh;
+    color: aliceblue;
+    text-align: center; 
+}
+.bd p{
+    margin-bottom: 30px;
+}
+.bd h1{margin-top: 10px;
+    font-size: 12vh;
+}
+#line{    
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-left: 22vw;
+    width: 49%;
+    text-align: -webkit-center;
+    list-style-type: none;
+    align-content: center;
+}
+.logo{
+    color: antiquewhite;
+    text-align: left;
+    position: static;
+}
+
+.container{
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 6%;
+    display: flex;
+}
+.container p{
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    color: rgba(0, 0, 0, 0.719);
+}
+.container h2{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+}
+.right{
+    width: 50%;  
+}
+
+.left{
+    width: 50%;
+}
+
+.left1{
+    width: 96%;
+    background-color: rgb(255, 255, 255);
+}
+.right1{float: right;
+    width: 96%;
+    background-color: rgb(255, 255, 255);
+}
+
+.midbar{height: 30vh;
+    color: blanchedalmond;
+    background-image: url(html_assignment/images/bg.jpg);
+    text-align: center;
+}
+.midbar p{
+    padding-top: 10vh;
+}
+
+.midbar2{height: 25vh;
+    text-align: center;
+}
+.midbar2 p{
+    padding-top: 10vh;
+}
+
+.gall{
+    margin: 3%;
+}
+.gall img{
+    margin: 2%;
+    border-style: solid;
+    padding: 0px;
+    width: 40vw;
+    height: 35vh;
+    border-width: 1vw;
+    border-color: #584d563b;
+}
+footer{
+    color: blanchedalmond;
+    text-align: center;
+    height: 30vh;
+    background-color: rgb(12, 12, 12);
+}
+
+.last i{
+    width: 4vw;
+    color: darkgrey;
+    margin-top: 8vh;
+}
+
+#coppyr8{
+    margin-top: 5vh;
+}
+
+@media only screen and (max-width: 600px){
+
+    .banner{
+        height:70vh;
+    }  
+
+    .bd{
+        margin-top: 20vh;  
+    }
+    .bd p{
+        margin-bottom: 20px;
+    }
+    .bd h1{margin-top: 10px;
+        font-size: 8vh;
+    }
+    .right{
+        width: 100vw;  
+    }
+    
+    .left{
+        width: 100%vw;
+    }
+}

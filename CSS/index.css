@@ -8,10 +8,48 @@ body{
     position: static;
     height:90vh;
     background-attachment:scroll;
-    background-image: url(html_assignment/images/slide01.jpg);   
+    background-image: url(/images/slide01.jpg);   
     background-size: cover;
     background-position: bottom;
 }
+/* menu btn css */
+.menubtn{
+    background-color: #589cd39a;
+    float: right;
+    color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.menubtn:hover {
+    background-color: #0b5f91f6;
+}
+.dropdown {float: right;
+    position: relative;
+    display: inline-block;
+}
+  .dropdown-content {
+    display: none;
+    position: sticky;
+    background-color: #0000006b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  .dropdown-content a {
+    color: rgb(132, 225, 248);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  .dropdown-content a:hover {
+      color: black;
+    background-color: #f1f1ff
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .bd{width: 60vw;
     position: absolute;
@@ -37,11 +75,11 @@ body{
     align-content: center;
 }
 .logo{
+    float: left;
     color: antiquewhite;
     text-align: left;
     position: static;
 }
-
 .container{
     text-align: center;
     background-color: #f2f2f2;
@@ -60,11 +98,9 @@ body{
 .right{
     width: 50%;  
 }
-
 .left{
     width: 50%;
 }
-
 .left1{
     width: 96%;
     background-color: rgb(255, 255, 255);
@@ -73,23 +109,20 @@ body{
     width: 96%;
     background-color: rgb(255, 255, 255);
 }
-
 .midbar{height: 30vh;
     color: blanchedalmond;
-    background-image: url(html_assignment/images/bg.jpg);
+    background-image: url(/images/bg.jpg);
     text-align: center;
 }
 .midbar p{
-    padding-top: 10vh;
+    padding-top: 8vh;
 }
-
 .midbar2{height: 25vh;
     text-align: center;
 }
 .midbar2 p{
     padding-top: 10vh;
 }
-
 .gall{
     margin: 3%;
 }
@@ -108,9 +141,8 @@ footer{
     height: 30vh;
     background-color: rgb(12, 12, 12);
 }
-
 .last i{
-    width: 4vw;
+    width: 6vw;
     color: darkgrey;
     margin-top: 8vh;
 }
@@ -119,7 +151,7 @@ footer{
     margin-top: 5vh;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
 
     .banner{
         height:70vh;
@@ -129,7 +161,7 @@ footer{
         margin-top: 20vh;  
     }
     .bd p{
-        margin-bottom: 20px;
+        margin-bottom: 10vh;
     }
     .bd h1{margin-top: 10px;
         font-size: 8vh;
@@ -138,7 +170,96 @@ footer{
         width: 100vw;  
     }
     
-    .left{
-        width: 100%vw;
+    .left{margin-bottom: 15vh;
+        width: 100vw;
+    }
+    .container{
+        width: 90vw;
+        display: inline;
+        }
+    .container p{
+        font-size: em;
+    }
+    .container h2{
+        font-size: 1.5em;
+    }
+    .left1{
+        padding-top: 15vh;
+        width: 100%;
+    }
+    .right1{
+        margin-bottom: 15vh;
+        width: 100%;
+    }      
+    .gall{
+        margin: 2%;
+    }
+    .gall img{
+       
+        width: 40vw;
+        height: auto;
+    }
+    .last i{
+        width: 10vw;
+        color: darkgrey;
+        margin-top: 8vh;
+    }
+}
+
+@media only screen and (max-width: 480px){ 
+    .banner{
+        height:100vh;
+    }  
+    .bd{
+        margin-top: 30vh;  
+    }
+    .bd p{
+        margin-bottom: 5vh;
+    }
+    .bd h1{margin-top: 5vh;
+        font-size: 6vh;
+    }
+    .left{margin-bottom: 0vh;
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;  
+    }
+    .left1{
+        padding-top: 0vh;
+        margin: 4vh 1vw;
+        width: 96%;
+    }
+    .right1{
+        padding-top: 0vh;
+        margin: 4vh 3vw;
+        width: 96%;
+    }    
+    .midbar p {
+        padding-top: 8vh;
+    }
+    #line {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    width: 62vw;
+    list-style-type: none;
+    align-content: center;
+    }  
+    .gall{
+        margin: 2%;
+    }
+    .gall img{
+        /* margin: auto; */
+        width: 90vw;
+        height: auto;
+    }
+    .last i{
+        width: 20vw;
+        color: darkgrey;
+        margin-top: 8vh;
+    }
+    footer{
+        height: 36vh;
     }
 }
